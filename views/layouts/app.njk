@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Pagina Principal{% endblock %}</title>
+    <link rel="stylesheet" href="/css/global.css">
+    {% block styles %} {%endblock %}
+
+</head>
+<body>
+{% include "partials/navbar.njk" %}
+
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+
+
+
+
+{%block scripts%}{% endblock %}  
+</body>
+</html>

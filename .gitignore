@@ -1,1 +1,39 @@
+# Archivos del sistema macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de iconos
+Icon?
+._*
+
+# Archivos de caché de Spotlight y Thumbnails
+.Spotlight-V100
+.Trashes
+._.Trashes
+.fseventsd
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Configuración del usuario
+*.log
+*.env
+.env.local
+
+# Archivos de editores comunes
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependencias y build
+node_modules/
+dist/
+build/
+
+# Archivos de sistema ocultos
+Thumbs.db
+ehthumbs.db
+Desktop.ini

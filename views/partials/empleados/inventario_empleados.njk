@@ -1,0 +1,106 @@
+{% extends "layouts/app.njk" %}
+{% block title %}
+    Inventario
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/inventario_empleados.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="inventario">
+
+<div class="titulo">
+<h1>Inventario</h1>
+</div> 
+
+    <div class="buscarinventario">
+        <form method="get" action="/buscar"> 
+            <input type="text" class="buscar" >
+            <button type="submit" class="lupa">
+                <i class="fas fa-search search-icon"></i> 
+            </button>
+        </form>
+    </div>
+
+<div class="boton1">
+<button type="botonañadir">Añadir Produto</button>
+</div>
+
+<div class="boton2">
+<button type="botoneditar">Editar Produto</button>
+</div>
+
+<div class="boton3">
+<button type="botoneliminar">Eliminar Produto</button>
+</div>
+
+<div class="cuadrosinventario">
+
+    <div class="arreglo1">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo2">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo3">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo4">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo5">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo6">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo7">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo8">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo9">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo10">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo11">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+    <div class="arreglo12">
+        <p>Arreglo de Rosas</p>
+        <p>Stock 00</p>
+    </div>
+
+</div>
+
+</div>
+
+
+{% endblock %}

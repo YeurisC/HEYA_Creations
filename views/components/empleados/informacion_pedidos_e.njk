@@ -1,0 +1,50 @@
+{% extends "layouts/app.njk" %}
+{# Extiende la plantilla base llamada "app.njk" #}
+
+{% block title %}
+    Inicio
+{% endblock %}
+{# Define el título de la página #}
+
+{% block styles %}
+    <!-- Enlace al archivo CSS específico de esta vista -->
+    <link rel="stylesheet" href="">
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="box">
+        <!-- Botón para regresar a la página anterior -->
+        <div class="btn-back">
+            <a href="#">Regresar</a>
+        </div>
+
+        <!-- Título principal de la página -->
+        <h1>Información del pedido</h1>
+
+        <!-- Subtítulo con número de pedido -->
+        <h2>Pedido <span>N.HC0004</span></h2>
+
+        <!-- Tabla con los datos del pedido -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Método de pago</th>
+                    <th>Pedido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán dinámicamente las filas del pedido -->
+            </tbody>
+        </table>
+    </div>
+</main>
+{% endblock %}
+{# Fin del bloque principal de contenido #}
+
+{% block scripts %}
+
+    <script src=""></script>
+{% endblock %}

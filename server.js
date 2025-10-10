@@ -18,7 +18,7 @@ app.set('view engine','njk');
 
 app.use(express.static(path.join(__dirname,'public')));
 
-const mainRoutes= require('./routes/empleados/empleadosRoutes.js');
+const mainRoutes= require('./routes/mainRoutes');
 
 
 app.use('/',mainRoutes);

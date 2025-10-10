@@ -5,32 +5,34 @@
 {% block styles %}
 {% endblock %}
 {% block content %}
-<h1>Empleados</h1>
-  
-  <h4>Empleado</h4>
-  <h4>Fecha de ingreso</h4>
-  <h4>Fecha de nomina</h4>
-  <h4>Nomina</h4>
-  <h5>Accion</h5>
-  
-  
-    <!--abajo de Empleado va estar pepe--->
-    <!--abajo de Fecha de ingreso va estar 20/6/25--->
-    <!--abajo de Fecha de nomina va estar 20/6/25--->
-    <!--abajo de nomina va estar 23.000--->
-    <!--abajo de Accion va estar en primer lugar el boton llamado cuenta y abajo de ese boton va estar el boton pegar--->
-    
- 
-  
-  <p>pepe</p>
-  <p>20/6/25</p>
-  <p>20/6/25</p>
-  <p>23.000</p>
-  <p>Accion</p>
-  
-   <label for="username">Cuenta</label>
-<input type="Cuenta" id="Cuenta" name="Cuenta">
-  
-   <label for="username">Pagar</label>
-<input type="Pagar" id="Pagar" name="Pagar">
+    <header>
+        <h1>Empleados</h1>
+        <div>
+            <input type="text" placeholder="">
+            <button type="button">Buscar</button>
+        </div>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Empleado</th>
+                <th>Fecha de ingreso</th>
+                <th>Fecha de nomina</th>
+                <th>Nomina</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>pepe</td>
+                <td>20/6/25</td>
+                <td>20/6/25</td>
+                <td>23.000</td>
+                <td>
+                    <button type="button">Cuenta</button>
+                    <button type="button">Pagar</button>
+                    <button type="button">Inhabilitar</button>
+                </td>
+            </tr>
 {% endblock %}

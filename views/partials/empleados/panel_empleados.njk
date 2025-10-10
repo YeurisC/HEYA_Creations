@@ -1,4 +1,5 @@
 {% extends "layouts/app.njk" %}
+
 {% block title %}
     Panel administrativo
 {% endblock %}
@@ -9,63 +10,59 @@
 
 {% block content %}
 
-<div class="administrativo">
+        <section class="graficos">
+              <div class="graficocircular"></div>
 
-    <div class="graficocircular"></div>
+              <div class="graficabarras"></div>
 
-    <div class="graficabarras"></div>
+              <p class="promedio">Promedio de Ventas mensual</p>
+              <p class="total">$100,000</p>
+        </section>
 
-    <p class="promedio">Promedio de Ventas mensual</p>
-    <p class="total">$100,000</p>
+        <div class="pedidos box">
+            <h3>Pedidos Recientes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clientes</th>
+                        <th>Producto</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
 
-<div class="cuadropedidos">
-<h3>Pedidos Recientes</h3>
- <table>
-<thead>
-<tr>
-  <th>Clientes</th>
-  <th>Producto</th>
-  <th>Fecha</th>
-  </tr>
-</thead>
-</table>
-</div>
+        <div class="deliverys box">
+            <h3>Deliverys</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clientes</th>
+                        <th>Producto</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button>Ver productos</button></td>
+                        <td><button>Ver productos</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+    </div>
 
-<div class="cuadrodeliverys">
-<h3>Deliverys</h3>
- <table>
-<thead>
-<tr>
-  <th>Clientes</th>
-  <th>Producto</th>
-  <th>Fecha</th>
-  </tr>
+    <div class="cuenta box">
+        <h2>Mi cuenta</h2>
+        <div class="informacion">
+            <p>Nombre</p>
+            <p>Yarismar Cruz</p>
+            <p>Email</p>
+            <p>yarismarcruz@heyacreations.com</p>
+            <p>Puesto</p>
+            <p>Administradora Principal</p>
+        </div>
+    </div>
 
-    <tr>
-    <td><button>Ver productos</button></td>
-    <td><button>Ver productos</button></td>
-  </tr>
-
-</thead>
-</table>
-</div>
-
-</div>
-
-<div class="micuenta">
-<h2>Mi cuenta</h2>
-
-<div class="informacion">
-    <p>Nombre</p>
-    <p>Yarismar Cruz</p>
-    <p>Email</p>
-    <p>yarismarcruz@heyacreations.com</p>
-    <p>Puesto</p>
-    <p>Administradora Principal</p>
-</div>
-
-</div>
-
-</div>
 {% endblock %}

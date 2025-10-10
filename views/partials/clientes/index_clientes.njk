@@ -1,98 +1,88 @@
 {% extends "layouts/app.njk" %}
+
 {% block title %}
     Home
 {% endblock %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/css/index_clientes.css">
+    <!-- Enlace al CSS para la página de inicio -->
+    <link rel="stylesheet" href="#">
 {% endblock %}
-<!-- Este es el link para conectar con css -->
 
 {% block content %}
 
-    <div class="heya">
+<!-- Contenedor principal -->
+<div class="home-container">
 
-        <!--  Para la sección Flores  -->
-        <section class="flores">
-            <h2>Flores</h2>
-            <div class="productoflores">
-                <div class="personalizadaflores1">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="personalizadaflores2">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="personalizadaflores3">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="personalizadaflores4">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
+    <!-- Sección: Flores -->
+    <section class="section-flores">
+        <h2>Flores</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
             </div>
-        </section>
-
-        <!--  Para la sección Bandejas  -->
-        <section class="bandejas">
-            <h2>Bandejas</h2>
-
-            <div class="productobandeja">
-                <div class="personalizadabandeja1">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="personalizadabandeja2">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="personalizadabandeja3">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="personalizadabandeja4">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
             </div>
-        </section>
-
-        <!--  Para la sección Eventos  -->
-        <section class="eventos">
-            <h2>Eventos</h2>
-
-            <div class="productoseventos">
-                <div class="imageneventos1">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="imageneventos2">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="imageneventos3">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
-
-                <div class="imageneventos4">
-                    <p>Bandeja Pesonalizada</p>
-                    <p>$0.00</p>
-                </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
             </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </section>
 
-        </section>
+    <!-- Sección: Bandejas -->
+    <section class="section-bandejas">
+        <h2>Bandejas</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Sección: Eventos -->
+    <section class="section-eventos">
+        <h2>Eventos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+            <div class="product-card">
+                <p>Bandeja Personalizada</p>
+                <p>$0.00</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+
 {% endblock %}
-<!-- Cierre heya -->

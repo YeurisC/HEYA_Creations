@@ -1,106 +1,46 @@
 {% extends "layouts/app.njk" %}
+
 {% block title %}
     Inventario
 {% endblock %}
 
 {% block styles %}
-    <link rel="stylesheet" href="/css/inventario_empleados.css">
+    <link rel="stylesheet" href="#">
 {% endblock %}
 
 {% block content %}
 
-<div class="inventario">
+<!-- Contenedor principal del inventario -->
+<div class="inventario-container">
 
-<div class="titulo">
-<h1>Inventario</h1>
-</div> 
+    <!-- Título -->
+    <div class="inventario-header">
+        <h1>Inventario</h1>
+    </div> 
 
-    <div class="buscarinventario">
+    <!-- Barra de búsqueda -->
+    <div class="inventario-search">
         <form method="get" action="/buscar"> 
-            <input type="text" class="buscar" >
-            <button type="submit" class="lupa">
-                <i class="fas fa-search search-icon"></i> 
-            </button>
+            <input type="text" name="query" class="search-input" placeholder="Buscar producto...">
+            <button type="submit" class="search-button"><!--aqui va el icono de lupa--></button>
         </form>
     </div>
 
-<div class="boton1">
-<button type="botonañadir">Añadir Produto</button>
-</div>
-
-<div class="boton2">
-<button type="botoneditar">Editar Produto</button>
-</div>
-
-<div class="boton3">
-<button type="botoneliminar">Eliminar Produto</button>
-</div>
-
-<div class="cuadrosinventario">
-
-    <div class="arreglo1">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
+    <!-- Botones de acciones -->
+    <div class="inventario-actions">
+        <button class="btn-add">Añadir Producto</button>
+        <button class="btn-edit">Editar Producto</button>
+        <button class="btn-delete">Eliminar Producto</button>
     </div>
 
-    <div class="arreglo2">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
+    <!-- Productos del inventario (Soo uno por que luego de iterara)-->
+    <div class="inventario-items">
+        <div class="inventario-card">
+            <p class="product-name">Arreglo de Rosas</p>
+            <p class="product-stock">Stock: 00</p>
+        </div>
     </div>
 
-    <div class="arreglo3">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo4">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo5">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo6">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo7">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo8">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo9">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo10">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo11">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-    <div class="arreglo12">
-        <p>Arreglo de Rosas</p>
-        <p>Stock 00</p>
-    </div>
-
-</div>
-
-</div>
-
+</div> <!-- Cierre del contenedor principal -->
 
 {% endblock %}

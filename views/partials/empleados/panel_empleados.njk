@@ -1,0 +1,68 @@
+{% extends "layouts/app.njk" %}
+
+{% block title %}
+    Panel administrativo
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/css/panel_empleados.css">
+{% endblock %}
+
+{% block content %}
+
+        <section class="graficos">
+              <div class="graficocircular"></div>
+
+              <div class="graficabarras"></div>
+
+              <p class="promedio">Promedio de Ventas mensual</p>
+              <p class="total">$100,000</p>
+        </section>
+
+        <div class="pedidos box">
+            <h3>Pedidos Recientes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clientes</th>
+                        <th>Producto</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="deliverys box">
+            <h3>Deliverys</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clientes</th>
+                        <th>Producto</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button>Ver productos</button></td>
+                        <td><button>Ver productos</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="cuenta box">
+        <h2>Mi cuenta</h2>
+        <div class="informacion">
+            <p>Nombre</p>
+            <p>Yarismar Cruz</p>
+            <p>Email</p>
+            <p>yarismarcruz@heyacreations.com</p>
+            <p>Puesto</p>
+            <p>Administradora Principal</p>
+        </div>
+    </div>
+
+{% endblock %}

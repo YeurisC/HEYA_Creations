@@ -1,0 +1,46 @@
+{% extends "layouts/app.njk" %}
+
+{% block title %}
+    Inventario
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="#">
+{% endblock %}
+
+{% block content %}
+
+<!-- Contenedor principal del inventario -->
+<div class="inventario-container">
+
+    <!-- Título -->
+    <div class="inventario-header">
+        <h1>Inventario</h1>
+    </div> 
+
+    <!-- Barra de búsqueda -->
+    <div class="inventario-search">
+        <form method="get" action="/buscar"> 
+            <input type="text" name="query" class="search-input" placeholder="Buscar producto...">
+            <button type="submit" class="search-button"><!--aqui va el icono de lupa--></button>
+        </form>
+    </div>
+
+    <!-- Botones de acciones -->
+    <div class="inventario-actions">
+        <button class="btn-add">Añadir Producto</button>
+        <button class="btn-edit">Editar Producto</button>
+        <button class="btn-delete">Eliminar Producto</button>
+    </div>
+
+    <!-- Productos del inventario (Soo uno por que luego de iterara)-->
+    <div class="inventario-items">
+        <div class="inventario-card">
+            <p class="product-name">Arreglo de Rosas</p>
+            <p class="product-stock">Stock: 00</p>
+        </div>
+    </div>
+
+</div> <!-- Cierre del contenedor principal -->
+
+{% endblock %}

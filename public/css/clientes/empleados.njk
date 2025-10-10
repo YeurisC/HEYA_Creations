@@ -1,0 +1,38 @@
+{% extends "layouts/app.njk" %}\
+{% block title %}
+    Gestion Clientes
+{% endblock %}
+{% block styles %}
+{% endblock %}
+{% block content %}
+    <header>
+        <h1>Empleados</h1>
+        <div>
+            <input type="text" placeholder="">
+            <button type="button">Buscar</button>
+        </div>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Empleado</th>
+                <th>Fecha de ingreso</th>
+                <th>Fecha de nomina</th>
+                <th>Nomina</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>pepe</td>
+                <td>20/6/25</td>
+                <td>20/6/25</td>
+                <td>23.000</td>
+                <td>
+                    <button type="button">Cuenta</button>
+                    <button type="button">Pagar</button>
+                    <button type="button">Inhabilitar</button>
+                </td>
+            </tr>
+{% endblock %}

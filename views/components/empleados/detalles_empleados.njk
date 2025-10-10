@@ -1,0 +1,49 @@
+{% extends "layouts/app.njk" %}
+{# Extiende la plantilla base llamada "app.njk" #}
+
+{% block title %}
+    Empleados
+{% endblock %}
+{# Define el título que aparecerá en la pestaña del navegador #}
+
+{% block styles %}
+    <!-- Enlace al archivo CSS específico de esta vista -->
+    <link rel="stylesheet" href="">
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="box">
+        <!-- Botón para regresar a la página anterior -->
+        <div class="btn-back">
+            <a href="#">Regresar</a>
+        </div>
+
+        <!-- Título principal de la página -->
+        <h1>Empleados</h1>
+
+        <!-- Tabla con la información de los empleados -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Empleado</th>
+                    <th>Fecha</th>
+                    <th>N.º de Cuenta</th>
+                    <th>Nómina</th>
+                    <th>Voucher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán dinámicamente las filas de empleados -->
+            </tbody>
+        </table>
+    </div>
+</main>
+{% endblock %}
+{# Fin del bloque principal de contenido #}
+
+{% block scripts %}
+    <!-- Enlace al archivo JavaScript específico de esta vista -->
+    <script src=""></script>
+{% endblock %}
+{# Fin del bloque de scripts #}

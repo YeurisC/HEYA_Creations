@@ -1,0 +1,211 @@
+{% extends "layouts/app.njk" %}
+{# Extiende la plantilla base llamada "app.njk" #}
+{% block title %}
+    Carrito de Compras
+{% endblock %}
+{# Define el título que aparecerá en la pestaña del navegador #}
+{% block styles %}
+    <!-- Enlace al archivo CSS específico de esta vista -->
+    <link rel="stylesheet" href="">
+{% endblock %}
+<body>
+    <!-- Sección principal del carrito -->
+    <section id="carrito" class="contenedor-pagina">
+        <!-- Encabezado del carrito -->
+        <div class="contenedor-encabezado-carrito">
+            <h1 class="titulo-carrito">Carrito</h1>
+        </div>
+        <!-- Cuadrícula general del carrito -->
+        <div class="cuadricula-carrito">
+            <!-- Encabezados de las columnas -->
+            <div class="encabezado-cuadricula-carrito">
+                <span class="columna-1">Producto</span>
+                <span class="columna-2">Nombre del Producto</span>
+                <span class="columna-3">Precio</span>
+                <span class="columna-4">Cantidad</span>
+                <span class="columna-5">Total</span>
+            </div>
+            <!-- Artículo 1 -->
+            <div class="articulo-carrito">
+                <div class="info-producto">
+                    <!-- Imagen del producto con botón eliminar -->
+                    <div class="contenedor-imagen-producto">
+                        <img src="" alt="Imagen de bandeja de desayuno" class="imagen-producto"/>
+                        <button class="btn-eliminar-articulo">
+                            <img src="" alt="Eliminar producto"/>
+                        </button>
+                    </div>
+                    <!-- Detalles del producto -->
+                    <div class="detalles-producto">
+                        <h2 class="nombre-producto">Bandeja de desayuno</h2>
+                        <p class="descripcion-producto">
+                            Una deliciosa sorpresa matutina con todo lo necesario para empezar un día especial.
+                        </p>
+                    </div>
+                </div>
+                <!-- Precio individual -->
+                <p class="precio-producto">$300</p>
+                <!-- Selector de cantidad -->
+                <div class="selector-cantidad">
+                    <button class="btn-cantidad btn-menos">
+                        <img src="" alt="Disminuir cantidad"/>
+                    </button>
+                    <span class="valor-cantidad">1</span>
+                    <div class="contenedor-boton-mas">
+                        <button class="btn-cantidad btn-mas">
+                            <img src="" alt="Aumentar cantidad fondo" class="fondo-boton-mas"/>
+                            <span class="signo-mas">+</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Total del producto -->
+                <p class="total-producto">$300</p>
+            </div>
+            <!-- Artículo 2 -->
+            <div class="articulo-carrito">
+                <div class="info-producto">
+                    <div class="contenedor-imagen-producto">
+                        <img src="" alt="Imagen de pastel de frutas" class="imagen-producto"/>
+                        <button class="btn-eliminar-articulo">
+                            <img src="" alt="Eliminar producto"/>
+                        </button>
+                    </div>
+                    <div class="detalles-producto">
+                        <h2 class="nombre-producto">Pastel de frutas</h2>
+                        <p class="descripcion-producto">
+                            Alternativa fresca y colorida. Una exquisita selección de las mejores frutas de temporada.
+                        </p>
+                    </div>
+                </div>
+                <p class="precio-producto">$300</p>
+                <div class="selector-cantidad">
+                    <button class="btn-cantidad btn-menos">
+                        <img src="" alt="Disminuir cantidad"/>
+                    </button>
+                    <span class="valor-cantidad">1</span>
+                    <div class="contenedor-boton-mas">
+                        <button class="btn-cantidad btn-mas">
+                            <img src="" alt="Aumentar cantidad fondo" class="fondo-boton-mas"/>
+                            <span class="signo-mas">+</span>
+                        </button>
+                    </div>
+                </div>
+                <p class="total-producto">$300</p>
+            </div>
+            <!-- Artículo 3 -->
+            <div class="articulo-carrito">
+                <div class="info-producto">
+                    <div class="contenedor-imagen-producto">
+                        <img src="" alt="Imagen de arreglo de flores" class="imagen-producto"/>
+                        <button class="btn-eliminar-articulo">
+                            <img src="" alt="Eliminar producto"/>
+                        </button>
+                    </div>
+                    <div class="detalles-producto">
+                        <h2 class="nombre-producto">Arreglo de flores</h2>
+                        <p class="descripcion-producto">
+                            La elegancia de las rosas frescas para alegrar el día y expresar lo que sientes.
+                        </p>
+                    </div>
+                </div>
+                <p class="precio-producto">$300</p>
+                <div class="selector-cantidad">
+                    <button class="btn-cantidad btn-menos">
+                        <img src="" alt="Disminuir cantidad"/>
+                    </button>
+                    <span class="valor-cantidad">1</span>
+                    <div class="contenedor-boton-mas">
+                        <button class="btn-cantidad btn-mas">
+                            <img src="" alt="Aumentar cantidad fondo" class="fondo-boton-mas"/>
+                            <span class="signo-mas">+</span>
+                        </button>
+                    </div>
+                </div>
+                <p class="total-producto">$300</p>
+            </div>
+            <!-- Artículo 4 -->
+            <div class="articulo-carrito">
+                <div class="info-producto">
+                    <div class="contenedor-imagen-producto">
+                        <img src="" alt="Imagen de decoración de cumpleaños" class="imagen-producto"/>
+                        <button class="btn-eliminar-articulo">
+                            <img src="" alt="Eliminar producto"/>
+                        </button>
+                    </div>
+                    <div class="detalles-producto">
+                        <h2 class="nombre-producto">Decoración de cumpleaños</h2>
+                        <p class="descripcion-producto">
+                            Creamos el ambiente perfecto para tu celebración. Dinos tu idea y la hacemos realidad.
+                        </p>
+                    </div>
+                </div>
+                <p class="precio-producto">$300</p>
+                <div class="selector-cantidad">
+                    <button class="btn-cantidad btn-menos">
+                        <img src="" alt="Disminuir cantidad"/>
+                    </button>
+                    <span class="valor-cantidad">1</span>
+                    <div class="contenedor-boton-mas">
+                        <button class="btn-cantidad btn-mas">
+                            <img src="" alt="Aumentar cantidad fondo" class="fondo-boton-mas"/>
+                            <span class="signo-mas">+</span>
+                        </button>
+                    </div>
+                </div>
+                <p class="total-producto">$300</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sección del resumen de compra y dirección -->
+    <section id="pago" class="contenedor-pagina">
+        <div class="contenedor-pago">
+            <!-- Columna de dirección -->
+            <div class="columna-envio">
+                <h2 class="titulo-pago">Dirección de envío</h2>
+                <div class="caja-direccion">
+                    <p class="texto-direccion">
+                        Calle del Sol #145, Residencial Las Colinas, Santiago de los Caballeros, 51000
+                    </p>
+                    <a href="#" class="btn btn-secundario">Cambiar dirección</a>
+                </div>
+                <p class="nota-envio">
+                    Por favor, asegúrate de que todos los datos de la dirección sean correctos para evitar inconvenientes con la entrega.
+                </p>
+            </div>
+            <!-- Columna del resumen del pedido -->
+            <div class="columna-resumen">
+                <h2 class="titulo-pago">Resumen del pedido</h2>
+                <div class="detalles-resumen">
+                    <div class="fila-resumen">
+                        <span>Total de artículos:</span>
+                        <span class="texto-claro">100,000</span>
+                    </div>
+                    <div class="fila-resumen">
+                        <span>Subtotal:</span>
+                        <span class="texto-claro">100,000</span>
+                    </div>
+                    <div class="fila-resumen">
+                        <span>Envío:</span>
+                        <span class="texto-exito">Gratis</span>
+                    </div>
+                    <div class="fila-resumen fila-total">
+                        <span>Total del pedido:</span>
+                        <span>RD$100,000</span>
+                    </div>
+                </div>
+                <!-- Botones de acción -->
+                <div class="acciones-resumen">
+                    <a href="#" class="btn btn-principal">Seguir comprando</a>
+                    <a href="#" class="btn btn-principal">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+{% block content %}{% endblock %}
+{# Fin del bloque principal de contenido #}
+{% block scripts %}
+    <!-- Enlace al archivo JavaScript específico de esta vista -->
+    <script src=""></script>
+{% endblock %}
+{# Fin del bloque de scripts #}

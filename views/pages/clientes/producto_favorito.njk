@@ -1,0 +1,129 @@
+{% extends "layouts/app.njk" %}
+{# Extiende la plantilla base llamada "app.njk" #}
+{% block title %}
+    Producto Favorito
+{% endblock %}
+{# Define el título que aparecerá en la pestaña del navegador #}
+{% block styles %}
+    <!-- Enlace al archivo CSS específico de esta vista -->
+    <link rel="stylesheet" href="">
+{% endblock %}
+{% block content %}
+    <!-- Sección principal de Favoritos -->
+    <section id="favoritos" class="seccion-favoritos">
+        <div class="contenedor">
+            <!-- Título principal de la sección -->
+            <h1 class="titulo-favoritos">Favoritos</h1>
+            <!-- Contenedor que organiza los productos en una cuadrícula -->
+            <div class="cuadricula-productos">
+                <!-- Tarjeta de producto individual -->
+                <article class="tarjeta-producto">
+                    <!-- Imagen del producto -->
+                    <img class="tarjeta-producto__imagen" src="" alt="Bandeja Personalizada">
+                    <!-- Contenedor del contenido del producto -->
+                    <div class="tarjeta-producto__contenido">
+                        <!-- Nombre del producto -->
+                        <h2 class="tarjeta-producto__nombre">Bandeja Personalizada</h2>
+                        <!-- Información adicional del producto (precio y estado) -->
+                        <div class="tarjeta-producto__meta">
+                            <p class="tarjeta-producto__precio">RD$50,000</p>
+                            <span class="tarjeta-producto__estado estado--disponible">Disponible</span>
+                        </div>
+                        <!-- Botones de acción del producto -->
+                        <div class="tarjeta-producto__acciones">
+                            <button class="btn btn--agregar">Añadir al Carro</button>
+                            <button class="btn btn--detalles">Ver detalles</button>
+                            <button class="btn btn--eliminar">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Tarjeta 2 - Producto agotado -->
+                <article class="tarjeta-producto">
+                    <img class="tarjeta-producto__imagen" src="" alt="Bandeja Personalizada">
+                    <div class="tarjeta-producto__contenido">
+                        <h2 class="tarjeta-producto__nombre">Bandeja Personalizada</h2>
+                        <div class="tarjeta-producto__meta">
+                            <p class="tarjeta-producto__precio">RD$50,000</p>
+                            <span class="tarjeta-producto__estado estado--agotado">Agotado</span>
+                        </div>
+                        <div class="tarjeta-producto__acciones">
+                            <button class="btn btn--agregar">Añadir al Carro</button>
+                            <button class="btn btn--detalles">Ver detalles</button>
+                            <button class="btn btn--eliminar">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Tarjeta 3 -->
+                <article class="tarjeta-producto">
+                    <img class="tarjeta-producto__imagen" src="" alt="Bandeja Personalizada">
+                    <div class="tarjeta-producto__contenido">
+                        <h2 class="tarjeta-producto__nombre">Bandeja Personalizada</h2>
+                        <div class="tarjeta-producto__meta">
+                            <p class="tarjeta-producto__precio">RD$50,000</p>
+                            <span class="tarjeta-producto__estado estado--disponible">Disponible</span>
+                        </div>
+                        <div class="tarjeta-producto__acciones">
+                            <button class="btn btn--agregar">Añadir al Carro</button>
+                            <button class="btn btn--detalles">Ver detalles</button>
+                            <button class="btn btn--eliminar">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Tarjeta 4 -->
+                <article class="tarjeta-producto">
+                    <img class="tarjeta-producto__imagen" src="" alt="Bandeja Personalizada">
+                    <div class="tarjeta-producto__contenido">
+                        <h2 class="tarjeta-producto__nombre">Bandeja Personalizada</h2>
+                        <div class="tarjeta-producto__meta">
+                            <p class="tarjeta-producto__precio">RD$50,000</p>
+                            <span class="tarjeta-producto__estado estado--disponible">Disponible</span>
+                        </div>
+                        <div class="tarjeta-producto__acciones">
+                            <button class="btn btn--agregar">Añadir al Carro</button>
+                            <button class="btn btn--detalles">Ver detalles</button>
+                            <button class="btn btn--eliminar">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Tarjeta 5 -->
+                <article class="tarjeta-producto">
+                    <img class="tarjeta-producto__imagen" src="" alt="Bandeja Personalizada">
+                    <div class="tarjeta-producto__contenido">
+                        <h2 class="tarjeta-producto__nombre">Bandeja Personalizada</h2>
+                        <div class="tarjeta-producto__meta">
+                            <p class="tarjeta-producto__precio">RD$50,000</p>
+                            <span class="tarjeta-producto__estado estado--disponible">Disponible</span>
+                        </div>
+                        <div class="tarjeta-producto__acciones">
+                            <button class="btn btn--agregar">Añadir al Carro</button>
+                            <button class="btn btn--detalles">Ver detalles</button>
+                            <button class="btn btn--eliminar">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Tarjeta 6 -->
+                <article class="tarjeta-producto">
+                    <img class="tarjeta-producto__imagen" src="" alt="Bandeja Personalizada">
+                    <div class="tarjeta-producto__contenido">
+                        <h2 class="tarjeta-producto__nombre">Bandeja Personalizada</h2>
+                        <div class="tarjeta-producto__meta">
+                            <p class="tarjeta-producto__precio">RD$50,000</p>
+                            <span class="tarjeta-producto__estado estado--disponible">Disponible</span>
+                        </div>
+                        <div class="tarjeta-producto__acciones">
+                            <button class="btn btn--agregar">Añadir al Carro</button>
+                            <button class="btn btn--detalles">Ver detalles</button>
+                            <button class="btn btn--eliminar">Eliminar</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{# Fin del bloque principal de contenido #}
+{% block scripts %}
+    <!-- Enlace al archivo JavaScript específico de esta vista -->
+    <script src=""></script>
+{% endblock %}
+{# Fin del bloque de scripts #}

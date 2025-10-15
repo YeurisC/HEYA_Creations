@@ -1,0 +1,102 @@
+{% extends "layouts/app.njk" %}
+{# Extiende la plantilla base llamada "app.njk" #}
+{% block title %}
+    Perfil
+{% endblock %}
+{# Define el título que aparecerá en la pestaña del navegador #}
+{% block styles %}
+    <!-- Enlace al archivo CSS específico de esta vista -->
+    <link rel="stylesheet" href="">
+{% endblock %}
+{% block content %}
+    <!-- Sección principal del perfil -->
+    <section id="profile-section">
+
+        <!-- Contenedor general de todo el perfil -->
+        <div class="profile-container">
+
+            <!-- ENCABEZADO DEL PERFIL -->
+            <header class="profile-header">
+                <!-- Logo de la marca o empresa -->
+                <img src="ruta/al/logo.png" alt="Heya Creations Logo" class="logo">
+
+                <!-- Botón para editar el perfil del usuario -->
+                <button class="edit-profile-btn">Editar Perfil</button>
+            </header>
+
+            <!-- CONTENIDO PRINCIPAL DEL PERFIL -->
+            <main class="profile-content">
+
+                <!-- TARJETA LATERAL DEL PERFIL (aside) -->
+                <aside class="profile-card">
+
+                    <!-- Contenedor del avatar con formas decorativas -->
+                    <div class="profile-avatar-container">
+                        <!-- Fondos decorativos en capas -->
+                        <img src="ruta/a/forma-fondo-1.svg" alt="background shape" class="bg-shape bg-shape-1">
+                        <img src="ruta/a/forma-fondo-2.svg" alt="background shape" class="bg-shape bg-shape-2">
+                        <img src="ruta/a/forma-fondo-3.svg" alt="background shape" class="bg-shape bg-shape-3">
+
+                        <!-- Imagen del avatar del usuario -->
+                        <img src="ruta/a/avatar-auron-play.svg" alt="Auron Play profile picture" class="profile-avatar">
+                    </div>
+
+                    <!-- Información principal del usuario -->
+                    <h2 class="profile-name">Auron Play</h2>
+                    <p class="profile-email">Auron.play@yyoquemealegro.com</p>
+
+                    <!-- Botón para cerrar sesión -->
+                    <button class="logout-btn">Cerrar Sesión</button>
+                </aside>
+
+                <!-- SECCIÓN DE TARJETAS INFORMATIVAS (grid principal) -->
+                <div class="info-grid">
+
+                    <!-- TARJETA DE MÉTODOS DE PAGO -->
+                    <div class="info-card payment-card">
+                        <h3 class="card-title">Métodos de Pago</h3>
+                        <img src="ruta/al/logo-paypal.png" alt="PayPal Logo" class="paypal-logo">
+                    </div>
+
+                    <!-- TARJETA DE PEDIDOS PENDIENTES -->
+                    <div class="info-card orders-card">
+                        <h3 class="card-title">Pedidos pendientes</h3>
+
+                        <!-- Lista de pedidos -->
+                        <ul class="order-list">
+                            <li class="order-item">
+                                <span class="order-id">HC0001</span>
+                                <button class="track-btn">Seguimiento</button>
+                            </li>
+                            <li class="order-item">
+                                <span class="order-id">HC0002</span>
+                                <button class="track-btn">Seguimiento</button>
+                            </li>
+                            <li class="order-item">
+                                <span class="order-id">HC0003</span>
+                                <button class="track-btn">Seguimiento</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- TARJETA DE DIRECCIÓN DE ENVÍO -->
+                    <div class="info-card direccion-card">
+                        <h3 class="title-direccion">Dirección de Envío</h3>
+                        <!-- Aquí podrías agregar la dirección del usuario -->
+                    </div>
+
+                </div>
+                <!-- Fin del grid -->
+            </main>
+            <!-- Fin del contenido principal -->
+        </div>
+        <!-- Fin del contenedor general -->
+    </section>
+
+{% endblock %}
+{# Fin del bloque principal de contenido #}
+{% block scripts %}
+    <!-- Enlace al archivo JavaScript específico de esta vista -->
+    <script src=""></script>
+{% endblock %}
+{# Fin del bloque de scripts #}

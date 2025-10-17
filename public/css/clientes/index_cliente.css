@@ -77,3 +77,43 @@ body {
     padding: 25px; /* Más espacio interno */
     min-height: 250px;
 }
+/* ===== SECCIÓN FLORES ===== */
+.section-flores {
+    margin-top: 20px;
+
+}
+
+.section-flores h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    background-color: #ff96f6;
+    width: 220px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+
+.product-card-flores {
+    position: relative;
+    background-color: #ffe1fa;
+    border-radius: 10px;
+    
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-flores {
+    width: 100%;
+    height: 150px;
+    background-color: #ffb3f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}

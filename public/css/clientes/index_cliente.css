@@ -351,7 +351,7 @@ p {
         max-width: 100%;
     }
 }
-/* ===== RESPONSIVIDAD para  ocultar tarjetas en pantallas pequeñas ===== */
+/* ===== RESPONSIVIDAD para  ocultar tarjetas en pantallas medianas o pequeñas ===== */
 @media (max-width: 1024px) {
     .product-card-flores:nth-child(4),
     .product-card-bandejas:nth-child(4),

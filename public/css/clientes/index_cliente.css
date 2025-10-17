@@ -351,3 +351,36 @@ p {
         max-width: 100%;
     }
 }
+/* ===== RESPONSIVIDAD para  ocultar tarjetas en pantallas pequeñas ===== */
+@media (max-width: 1024px) {
+    .product-card-flores:nth-child(4),
+    .product-card-bandejas:nth-child(4),
+    .product-card-eventos:nth-child(4) {
+        display: none; /* Oculta la 4ta tarjeta en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card-flores:nth-child(3),
+    .product-card-flores:nth-child(4),
+    .product-card-bandejas:nth-child(3),
+    .product-card-bandejas:nth-child(4),
+    .product-card-eventos:nth-child(3),
+    .product-card-eventos:nth-child(4) {
+        display: none; /* Oculta 3ra y 4ta tarjeta en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card-flores:nth-child(2),
+    .product-card-flores:nth-child(3),
+    .product-card-flores:nth-child(4),
+    .product-card-bandejas:nth-child(2),
+    .product-card-bandejas:nth-child(3),
+    .product-card-bandejas:nth-child(4),
+    .product-card-eventos:nth-child(2),
+    .product-card-eventos:nth-child(3),
+    .product-card-eventos:nth-child(4) {
+        display: none; /* Solo se muestra la 1ra tarjeta en móviles */
+    }
+}

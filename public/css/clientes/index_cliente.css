@@ -60,3 +60,20 @@ body {
     animation: aparecer 1.5s ease forwards; /* duración y tipo de animación */
     animation-delay: 0.5s; /* retardo para que aparezca después del h1 */
 }
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+.product-card-flores,
+.product-card-bandejas,
+.product-card-eventos {
+    width: 100%; /* Ocupa todo el ancho de la columna del grid */
+    padding: 25px; /* Más espacio interno */
+    min-height: 250px;
+}

@@ -240,9 +240,6 @@ p {
     transform: scale(1.05);
 }
 
-
-
-
 /* ===== Precio (span) ===== */
 .product-card-flores span,
 .product-card-bandejas span,
@@ -262,4 +259,14 @@ p {
 .product-card-eventos:hover span {
     color: #313031;
     transform: scale(1.1);
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

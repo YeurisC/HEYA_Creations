@@ -164,3 +164,41 @@ tbody tr:hover {
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header input[type="text"] {
+        width: 200px;
+    }
+
+    table th, table td {
+        padding: 14px 10px;
+        font-size: 1rem;
+    }
+
+    table button {
+        width: 90px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header input[type="text"] {
+        width: 100%;
+    }
+
+    table, th, td {
+        font-size: 0.95rem;
+    }
+
+    table button {
+        width: 100%;
+    }
+}

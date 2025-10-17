@@ -270,3 +270,84 @@ p {
         transform: translateY(0);
     }
 }
+/* ===== RESPONSIVIDAD ===== */
+@media (max-width: 1200px) {
+    .product-grid {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product-card-flores,
+    .product-card-bandejas,
+    .product-card-eventos {
+        min-height: 220px; /* ajustar altura en pantallas medianas */
+        padding: 20px;
+    }
+
+    .banner {
+        height: 220px;
+        padding: 15px 20px;
+    }
+
+    .banner h1 {
+        font-size: 1.8em;
+    }
+
+    .banner p {
+        font-size: 0.95em;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .product-card-flores,
+    .product-card-bandejas,
+    .product-card-eventos {
+        min-height: 200px; /* altura más compacta */
+        padding: 15px;
+    }
+
+    .banner {
+        height: auto;
+        padding: 30px 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.6em;
+    }
+
+    .banner p {
+        font-size: 0.9em;
+        max-width: 100%;
+    }
+}

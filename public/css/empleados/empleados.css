@@ -78,3 +78,34 @@ header button:hover {
     background-color: #474747;
     transform: scale(1.05);
 }
+
+/* Estilos de la tabla */
+table {
+    width: 90%;
+    max-width: 1400px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(58, 57, 57, 0.85);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+
+
+th, td {
+    padding: 18px 20px;
+    text-align: center;
+
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+thead {
+    background-color: rgba(40, 40, 40, 0.9);
+}
+
+th {
+    font-weight: bold;
+}

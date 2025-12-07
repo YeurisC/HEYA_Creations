@@ -1,0 +1,122 @@
+/* Variables de colores */
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario-letra: #F9D147;
+    --gris: #636363FF;
+    --color-boton: #3A3939B3;
+    /* rgba(58,57,57,0.7) */
+    background-color: #202020;
+}
+
+/* Box model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centrando contenido */
+main {
+    min-height: calc(100dvh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Títulos */
+h1,
+h2 {
+    color: var(--primario-letra);
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+/* Contenedor */
+.container {
+    color: var(--blanco);
+    background-color: var(--gris);
+    text-align: center;
+    width: 900px;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Formulario */
+form {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    color: var(--blanco);
+}
+
+form div {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+form input {
+    width: 100%;
+    padding: 17px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+input:focus {
+    border: 2px solid var(--primario-letra);
+    box-shadow: 0 0 12px 2px rgba(249, 209, 71, 0.2);
+}
+
+form div svg {
+    width: 70px;
+    height: 40px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    margin-top: 15px;
+}
+
+/* Botón */
+.btn {
+    background-color: var(--color-boton);
+    color: var(--blanco);
+    padding: 20px;
+    /* 2rem -> 20px */
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn:hover {
+    background-color: #4A4949CC;
+}
+
+/* Enlaces */
+p a {
+    color: var(--primario-letra);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
